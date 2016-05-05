@@ -9,7 +9,15 @@ public class LevelManager : MonoBehaviour {
     void Start()
     {
         Debug.Log("Loaded LoadManager");
-        Invoke("LoadLevelNext", autoLoadNextLevelAfter);
+        if(autoLoadNextLevelAfter == 0)
+        {
+            Debug.Log("Level auto load disabled");
+        }
+        else
+        {
+            Invoke("LoadLevelNext", autoLoadNextLevelAfter);
+        }
+            
     }
 
 	public void LoadLevel(string name){
@@ -17,6 +25,13 @@ public class LevelManager : MonoBehaviour {
         // Application.LoadLevel (name);    Deprecated for Unity 5
         SceneManager.LoadScene(name);
 	}
+
+    public void LoadLevelIndex(int name)
+    {
+        Debug.Log("New Level load: " + name);
+        // Application.LoadLevel (name);    Deprecated for Unity 5
+        SceneManager.LoadScene(name);
+    }
 
     public void LoadLevelNext()
     {
