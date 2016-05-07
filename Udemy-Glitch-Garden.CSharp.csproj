@@ -66,11 +66,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\FadeIn.cs" />
-    <Compile Include="Assets\Scripts\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\MusicManager.cs" />
-    <Compile Include="Assets\Scripts\PlayersPrefManager.cs" />
-    <Compile Include="Assets\Scripts\Splash.cs" />
+    <Compile Include="Assets\FadeIn.cs" />
+    <Compile Include="Assets\LevelManager.cs" />
+    <Compile Include="Assets\MusicManager.cs" />
+    <Compile Include="Assets\Splash.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
