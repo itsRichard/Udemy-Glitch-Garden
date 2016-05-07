@@ -51,7 +51,7 @@
      <Compile Include="Assets\Scripts\OptionsController.cs" />
      <Compile Include="Assets\Scripts\PlayersPreferencesManager.cs" />
      <Compile Include="Assets\Scripts\Splash.cs" />
-     <Compile Include="Assets\TEST.cs" />
+     <Compile Include="Assets\debugcheck.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

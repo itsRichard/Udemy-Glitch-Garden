@@ -12,7 +12,7 @@ public class PlayersPreferencesManager : MonoBehaviour {
 
 	public static void SetMasterVolume(float volume)
 	{
-		if (volume > 0 && volume <1f) 
+		if (volume >= 0 && volume <= 1f) 
 		{
 			PlayerPrefs.SetFloat(MASTER_VOLUME_KEY, volume);
 		} 
@@ -51,7 +51,7 @@ public class PlayersPreferencesManager : MonoBehaviour {
 
 	public static void SetDifficulty(float difficulty)
 	{
-		if (difficulty >= 0f && difficulty <= 1) {
+		if (difficulty >= 0f && difficulty <= 3) {
 			PlayerPrefs.SetFloat (DIFF_KEY, difficulty);
 		} else {
 			Debug.LogError ("Difficulty invalid");

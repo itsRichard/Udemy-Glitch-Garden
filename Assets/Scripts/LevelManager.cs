@@ -33,6 +33,10 @@ public class LevelManager : MonoBehaviour {
         SceneManager.LoadScene(name);
     }
 
+	public void LoadStart(){
+		SceneManager.LoadScene (1);
+	}
+
     public void LoadLevelNext()
     {
         Debug.Log("New Level load" + name);
