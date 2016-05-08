@@ -38,6 +38,7 @@ GameObject:
   - 95: {fileID: 95000012417790170}
   - 61: {fileID: 61000011717441526}
   - 114: {fileID: 114000010870987260}
+  - 114: {fileID: 114000012225666022}
   m_Layer: 0
   m_Name: Star Trophy
   m_TagString: Untagged
@@ -207,6 +208,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4914079bf409eb478cd664f3ee6ed30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000012225666022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012343108562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777c08e8f1e0c5a49bfde7985519edff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!212 &212000010779445564
 SpriteRenderer:
   m_ObjectHideFlags: 1

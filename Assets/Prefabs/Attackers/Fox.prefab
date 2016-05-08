@@ -41,6 +41,7 @@ GameObject:
   - 212: {fileID: 212000012994669514}
   - 114: {fileID: 114000014204765352}
   - 50: {fileID: 50000013563844586}
+  - 114: {fileID: 114000010193574124}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -105,7 +106,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5}
+  m_Size: {x: 0.88, y: 0.5}
 --- !u!95 &95000010204682666
 Animator:
   serializedVersion: 3
@@ -123,6 +124,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000010193574124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013442318152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777c08e8f1e0c5a49bfde7985519edff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!114 &114000013133653644
 MonoBehaviour:
   m_ObjectHideFlags: 1

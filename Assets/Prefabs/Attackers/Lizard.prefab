@@ -40,6 +40,7 @@ GameObject:
   - 61: {fileID: 61000013780245350}
   - 50: {fileID: 50000011827576566}
   - 114: {fileID: 114000013815092264}
+  - 114: {fileID: 114000014278570736}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Untagged
@@ -144,6 +145,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d61cf549afcc274392167b7cb7306e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000014278570736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013073591164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777c08e8f1e0c5a49bfde7985519edff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!212 &212000013053428566
 SpriteRenderer:
   m_ObjectHideFlags: 1

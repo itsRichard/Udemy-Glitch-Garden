@@ -40,6 +40,7 @@ GameObject:
   - 61: {fileID: 61000012172911946}
   - 50: {fileID: 50000013629204364}
   - 114: {fileID: 114000010642569866}
+  - 114: {fileID: 114000013546708954}
   m_Layer: 0
   m_Name: Cammy
   m_TagString: Untagged
@@ -144,6 +145,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007deb92c6fb6487e81f27549e415a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000013546708954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010319302062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777c08e8f1e0c5a49bfde7985519edff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!212 &212000012835171200
 SpriteRenderer:
   m_ObjectHideFlags: 1
