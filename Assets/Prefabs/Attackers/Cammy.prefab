@@ -36,6 +36,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011470863866}
   - 95: {fileID: 95000010628404786}
+  - 114: {fileID: 114000011588410270}
   m_Layer: 0
   m_Name: Cammy
   m_TagString: Untagged
@@ -87,6 +88,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000011588410270
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010319302062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007deb92c6fb6487e81f27549e415a4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 0.9
 --- !u!212 &212000012835171200
 SpriteRenderer:
   m_ObjectHideFlags: 1
