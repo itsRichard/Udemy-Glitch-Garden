@@ -36,6 +36,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013411757950}
   - 212: {fileID: 212000012584042948}
+  - 61: {fileID: 61000013095550948}
   m_Layer: 0
   m_Name: Corgette
   m_TagString: Untagged
@@ -52,6 +53,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012236848592}
   - 95: {fileID: 95000010213248280}
+  - 61: {fileID: 61000013910532456}
+  - 114: {fileID: 114000010592524480}
   m_Layer: 0
   m_Name: Cactus 1
   m_TagString: Untagged
@@ -100,6 +103,34 @@ Transform:
   m_Father: {fileID: 4000012236848592}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61000013095550948
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012476554856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.56, y: 0.56}
+--- !u!61 &61000013910532456
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014101364736}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!95 &95000010213248280
 Animator:
   serializedVersion: 3
@@ -117,6 +148,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000010592524480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014101364736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4914079bf409eb478cd664f3ee6ed30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212000011922253608
 SpriteRenderer:
   m_ObjectHideFlags: 1
