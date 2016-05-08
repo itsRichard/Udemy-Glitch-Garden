@@ -32,7 +32,7 @@ public class OptionsController : MonoBehaviour {
 		PlayersPreferencesManager.SetDifficulty (difficultySlider.value);
 		print ("Player Pref Volume is now set at " + PlayersPreferencesManager.GetMasterVolume());
 		print ("Player Pref Difficulty is now set at " + PlayersPreferencesManager.GetDifficulty());
-		levelManager.LoadLevel ("01a Start");
+        levelManager.LoadStart();
 	}
 
 	public void SetDefaults(){
