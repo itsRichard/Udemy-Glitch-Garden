@@ -2,7 +2,8 @@
 using System.Collections;
 
 [RequireComponent(typeof(Attacker))]
-public class character_cammy : MonoBehaviour {
+public class character_cammy : MonoBehaviour 
+{
 
     private Animator anim;
     private Attacker attacker;

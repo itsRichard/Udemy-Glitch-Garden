@@ -33,8 +33,9 @@ public class character_lizard : MonoBehaviour
 
         else
         {
-            anim.SetBool("isAttacking", true);
+            anim.SetBool("isAttacking", true); 
             attacker.Attack(obj); // Set the current target to the thing this collided with 
+			// triggers attacking animation, which will then trigger attacks
         }
 
 

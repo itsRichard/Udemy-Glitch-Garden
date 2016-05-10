@@ -23,12 +23,13 @@ public class Attacker : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-			transform.Translate (Vector3.left * currentSpeed * Time.deltaTime);
-        if (!currentTarget)
+		
+		transform.Translate (Vector3.left * currentSpeed * Time.deltaTime);
+        if (!currentTarget)		
         {
             animator.SetBool("isAttacking", false);
         }
- 
+		// Events defined in the animation set the movement speed through SetSpeed()
 	}
 
     void OnTriggerEnter2D()

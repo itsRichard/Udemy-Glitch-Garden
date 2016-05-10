@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Lizard_Walking
+  m_Name: Lizard_Walk
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -114,6 +114,6 @@ AnimationClip:
     functionName: SetSpeed
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: 1.2
+    floatParameter: 1.1
     intParameter: 0
     messageOptions: 0
