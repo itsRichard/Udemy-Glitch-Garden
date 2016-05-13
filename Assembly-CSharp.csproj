@@ -38,38 +38,40 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity 5.4.0b16/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity 5.4.0b16/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Projectile.cs" />
-     <Compile Include="Assets\Scripts\Attacker.cs" />
-     <Compile Include="Assets\Scripts\Defenders.cs" />
+     <Compile Include="Assets\Prefabs\Attacker.cs" />
+     <Compile Include="Assets\Prefabs\Attackers\character_cammy.cs" />
+     <Compile Include="Assets\Prefabs\Attackers\character_fox.cs" />
+     <Compile Include="Assets\Prefabs\Attackers\character_lizard.cs" />
+     <Compile Include="Assets\Prefabs\Defenders\Defenders.cs" />
+     <Compile Include="Assets\Prefabs\Defenders\character_stone.cs" />
+     <Compile Include="Assets\Scripts\Button.cs" />
      <Compile Include="Assets\Scripts\FadeIn.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\MusicManager.cs" />
      <Compile Include="Assets\Scripts\OptionsController.cs" />
      <Compile Include="Assets\Scripts\PlayersPreferencesManager.cs" />
+     <Compile Include="Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Scripts\SetStartVolume.cs" />
+     <Compile Include="Assets\Scripts\Shooter.cs" />
+     <Compile Include="Assets\Scripts\Shredder.cs" />
      <Compile Include="Assets\Scripts\Splash.cs" />
-     <Compile Include="Assets\Scripts\character_lizard.cs" />
-     <Compile Include="Assets\SetStartVolume.cs" />
-     <Compile Include="Assets\TEST.cs" />
-     <Compile Include="Assets\character_cammy.cs" />
-     <Compile Include="Assets\character_fox.cs" />
-     <Compile Include="Assets\character_stone.cs" />
-     <Compile Include="Assets\debugcheck.cs" />
+     <Compile Include="Assets\Scripts\debugcheck.cs" />
  <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity 5.4.0b16/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity 5.4.0b16/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity 5.4.0b16/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
