@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\Shredder.cs" />
      <Compile Include="Assets\Scripts\Splash.cs" />
      <Compile Include="Assets\Scripts\debugcheck.cs" />
+     <Compile Include="Assets\Spawner.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity 5.4.0b16/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
