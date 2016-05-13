@@ -8,7 +8,6 @@ public class FadeIn : MonoBehaviour {
     private Image fadePanel;
     private Color currentColor = Color.black;
 
-
     // Use this for initialization
     void Start () {
 		gameObject.SetActive (true);
@@ -27,7 +26,9 @@ public class FadeIn : MonoBehaviour {
         }
         else
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(false); 
+		// disable the panel when time is out
+		// after alpha has gone from 255 to zero
         }
     }
 }
