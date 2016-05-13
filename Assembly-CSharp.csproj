@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DefenderSpawner.cs" />
      <Compile Include="Assets\Prefabs\Attacker.cs" />
      <Compile Include="Assets\Prefabs\Attackers\character_cammy.cs" />
      <Compile Include="Assets\Prefabs\Attackers\character_fox.cs" />

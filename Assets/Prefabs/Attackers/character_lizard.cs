@@ -23,7 +23,7 @@ public class character_lizard : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log(name + " collided with " + col);
+
         GameObject obj = col.gameObject;
 
         if (!obj.GetComponent<Defenders>())

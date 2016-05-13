@@ -1,20 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Projectile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DefenderSpawner.cs">
     <Files>
-      <File FileName="Assets/character_cammy.cs" Line="6" Column="1" />
-      <File FileName="Assets/Scripts/character_lizard.cs" Line="38" Column="68" />
-      <File FileName="Assets/Scripts/Attacker.cs" Line="61" Column="40" />
+      <File FileName="Assets/DefenderSpawner.cs" Line="17" Column="21" />
       <File FileName="Assets/Scripts/PlayersPreferencesManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Projectile.cs" Line="16" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
