@@ -30,6 +30,9 @@ public class Health : MonoBehaviour {
     public void DestroyObject()
     {
         Destroy(gameObject);
+	// Destroy the object that this component
+	// is attached to which will be either an 
+	// attacker or a defender
     }
 
 }
