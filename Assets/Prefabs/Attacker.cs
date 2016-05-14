@@ -17,8 +17,12 @@ public class Attacker : MonoBehaviour {
         //Rigidbody2D myRigidBody = gameObject.AddComponent<Rigidbody2D>();   
         //myRigidBody.isKinematic = true;
 
-        gameObject.AddComponent<Rigidbody2D>();
-        gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+        if (!gameObject.GetComponent<Rigidbody2D>())
+        {
+            gameObject.AddComponent<Rigidbody2D>();
+            gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+        }
+
         animator = GetComponent<Animator>();
 
 	}
@@ -48,7 +52,7 @@ public class Attacker : MonoBehaviour {
     // called from the animator at the time of actual blow 
     public void StrikeCurrentTarget (float damage)
     {
-        Debug.Log(name + " striking Target for " + damage);
+        //Debug.Log(name + " striking Target for " + damage);
         if (currentTarget)
         {
             Health health = currentTarget.GetComponent<Health>();
