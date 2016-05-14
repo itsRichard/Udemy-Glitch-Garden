@@ -67,10 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Prefabs\Attacker.cs" />
-    <Compile Include="Assets\Prefabs\Defenders\Defenders.cs" />
-    <Compile Include="Assets\Prefabs\Defenders\character_stone.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\DefenderSpawner.cs" />
+    <Compile Include="Assets\Scripts\Defenders.cs" />
     <Compile Include="Assets\Scripts\FadeIn.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
@@ -87,6 +86,7 @@
     <Compile Include="Assets\Scripts\character_cammy.cs" />
     <Compile Include="Assets\Scripts\character_fox.cs" />
     <Compile Include="Assets\Scripts\character_lizard.cs" />
+    <Compile Include="Assets\Scripts\character_stone.cs" />
     <Compile Include="Assets\Scripts\debugcheck.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

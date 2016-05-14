@@ -5,6 +5,7 @@ public class DefenderSpawner : MonoBehaviour {
 
 	public Camera myCamera;
 	private GameObject parent;
+    private StarDisplay starDisplay;
 
 	private void Start()
 	{
@@ -12,6 +13,7 @@ public class DefenderSpawner : MonoBehaviour {
 		if (!parent) {
 			parent = new GameObject ("Defenders");	// Create a new game object called Projectiles
 		}
+        starDisplay = GameObject.FindObjectOfType<StarDisplay>();
 	}
 
 	void OnMouseDown(){
@@ -19,15 +21,33 @@ public class DefenderSpawner : MonoBehaviour {
 		//print (SnapToGrid(CalculateWorldPointOfMouseClick()));
 		if (!Button.selectedDefender) {
 			Debug.Log ("Defender is Null");
-		} else {
-			Vector2 rawPos = CalculateWorldPointOfMouseClick ();
-			Vector2 roundPos = SnapToGrid (rawPos);
-			GameObject defender = Button.selectedDefender;
-			Quaternion zeroRot = Quaternion.identity;
-			GameObject newDefender = Instantiate (defender, roundPos, zeroRot) as GameObject;
-			newDefender.transform.parent = parent.transform;
 		}
+
+        Vector2 rawPos = CalculateWorldPointOfMouseClick();
+        Vector2 roundedPos = SnapToGrid(rawPos);
+        //GameObject defender = Button.selectedDefender;
+
+        int defenderCost = Button.selectedDefender.GetComponent<Defenders>().starCost;
+
+        if (starDisplay.UseStars(defenderCost) == StarDisplay.Status.SUCCESS)
+        {
+            SpawnDefender(roundedPos, Button.selectedDefender);
+        }
+         else
+        {
+            Debug.Log("Insufficient stars to spawn");
+        }
+
+
+		
 	}
+
+    void SpawnDefender (Vector2 roudnedPos, GameObject defender)
+    {
+        Quaternion zeroRot = Quaternion.identity;
+        GameObject newDefender = Instantiate(defender, roudnedPos, zeroRot) as GameObject;
+        newDefender.transform.parent = parent.transform;
+    }
 
 	Vector2 SnapToGrid (Vector2 rawWorldPos){
 		int newX = Mathf.RoundToInt (rawWorldPos.x);

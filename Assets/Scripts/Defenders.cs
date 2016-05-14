@@ -4,6 +4,7 @@ using System.Collections;
 public class Defenders : MonoBehaviour {
 
     StarDisplay star;
+    public int starCost = 100;
 
     void Start()
     {
