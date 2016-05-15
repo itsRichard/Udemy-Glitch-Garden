@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Button : MonoBehaviour {
 
@@ -7,6 +8,8 @@ public class Button : MonoBehaviour {
     // each button is going to be assigned a defender pre fab that everyone can see
 
     private Button[] buttonArray;
+    private Text costText;
+
     public static GameObject selectedDefender;     
 
     //By making selectedDefender PUBLIC and STATIC, the game will know at any time what the selected
@@ -14,14 +17,29 @@ public class Button : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        buttonArray = GameObject.FindObjectsOfType<Button>();
         // Find all GameObjects that are buttons when this thing is initialized; on start
         // then, put them in an array.  
-        
+        buttonArray = GameObject.FindObjectsOfType<Button>();
+
+        // Find text component (the cost), set it to the buttons's prefab's starcost
+
+        if (!GetComponentInChildren<Text>()) { Debug.LogWarning(name + " has no cost "); }
+        GetComponentInChildren<Text>().text = GetComponent<Button>().defenderPrefab.GetComponent<Defenders>().starCost.ToString();
+
+
+
+        //Alt 1
+        //  defenderPrefab.GetComponent<Defenders>().starCost
+
+        //alt 2
+        //costText = GetComponentInChildren<Text>();
+        //costText.text = GetComponent<Button>().defenderPrefab.GetComponent<Defenders>().starCost.ToString();
+
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+
+    // Update is called once per frame
+    void Update () {
 	
 	}
 

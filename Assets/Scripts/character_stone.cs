@@ -8,6 +8,8 @@ public class character_stone : MonoBehaviour {
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
+
+       
     }
 
     void Update()
