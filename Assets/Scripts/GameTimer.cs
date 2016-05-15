@@ -34,16 +34,31 @@ public class GameTimer : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         slider.value = (Time.timeSinceLevelLoad / levelSeconds);
-        if (Time.timeSinceLevelLoad >= levelSeconds && !isEndOfLevel) 
+        if (Time.timeSinceLevelLoad >= levelSeconds && !isEndOfLevel)
         {
-            print("Level Over");
-            audioSource.volume = 0.5f;
-            audioSource.Play();
-            winLabel.SetActive(true);
-            Invoke("LoadNextLevel", audioSource.clip.length);
-            isEndOfLevel = true;
+            HandleWinCondition();
         }
-	}
+    }
+
+    private void HandleWinCondition()
+    {
+        DestroyAllTaggedObjects();
+        print("Level Over");
+        audioSource.volume = 0.5f;
+        audioSource.Play();
+        winLabel.SetActive(true);
+        Invoke("LoadNextLevel", audioSource.clip.length);
+        isEndOfLevel = true;
+    }
+
+    void DestroyAllTaggedObjects()
+    {
+        GameObject[] destroyOnWinObjects = GameObject.FindGameObjectsWithTag("destroyOnWin");
+        foreach (GameObject taggedObject in destroyOnWinObjects)
+        {
+            Destroy(taggedObject);
+        }
+    }
 
     void LoadNextLevel()
     {

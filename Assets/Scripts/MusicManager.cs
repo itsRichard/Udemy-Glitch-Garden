@@ -11,7 +11,8 @@ public class MusicManager : MonoBehaviour {
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>(); 
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = PlayersPreferencesManager.GetMasterVolume();
     }
 	void Awake () {
         DontDestroyOnLoad(gameObject);
